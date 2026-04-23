@@ -1,0 +1,41 @@
+name: quran_break
+description: "Quran Break — таймер перерывов с аятами Корана"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  dio: ^5.4.3
+  shared_preferences: ^2.3.1
+  tray_manager: ^0.2.3
+  window_manager: ^0.3.9
+  local_notifier: ^0.1.6
+  google_fonts: ^6.2.1
+  desktop_multi_window: ^0.3.0
+  screen_retriever: ^0.1.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+
+flutter_launcher_icons:
+  image_path: "assets/icons/app_icon.png"
+  macos:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+  windows:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+    icon_size: 256
